@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <ApplicationManifest>Properties\DevelopmentAgent.manifest</ApplicationManifest>
+    <!-- Globally bypass the Semantic Kernel experimental feature warnings -->
+    <NoWarn>$(NoWarn);SKEXP0001;SKEXP0020;SKEXP0070</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.1.0" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.1.0" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.1.0" />
+    <PackageReference Include="Markdown.Avalonia" Version="11.0.2" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.30.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Plugins.Memory" Version="1.30.0-alpha" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Sqlite" Version="1.30.0-alpha" />
+    <!-- Explicit alpha integration for the dedicated Ollama extension libraries -->
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Ollama" Version="1.80.1-alpha" />
+  </ItemGroup>
+</Project>

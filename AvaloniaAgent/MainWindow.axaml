@@ -1,0 +1,41 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:md="clr-namespace:Markdown.Avalonia;assembly=Markdown.Avalonia"
+        x:Class="AvaloniaAgent.MainWindow"
+        Title="Offline AI Agent Developer Assistant" 
+        Width="850" Height="650"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid RowDefinitions="Auto, *, Auto" Margin="15">
+        
+        <!-- Header Actions Layout -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="10" Margin="0,0,0,15">
+            <Button Content="📁 Index Project Folder" Click="OnScanCodebaseClick"/>
+            <TextBlock Text="Offline LLM State: Connected (Proxmox Server)" VerticalAlignment="Center" Foreground="Gray" FontSize="12"/>
+        </StackPanel>
+        
+        <!-- The Offline Markdown Viewer Engine -->
+        <Border Grid.Row="1" Background="#1e1e1e" CornerRadius="8" Padding="10">
+            <md:MarkdownScrollViewer x:Name="MarkdownViewer" 
+                                     Markdown="### Welcome&#x0a;Ask your local agent a question or context-index your C# codebase above." />
+        </Border>
+        
+        <!-- User Input Panel Layout -->
+        <Grid Grid.Row="2" ColumnDefinitions="*, Auto" Margin="0,15,0,0">
+            <TextBox Grid.Column="0" 
+                     x:Name="InputBox" 
+                     Watermark="Ask about your code (e.g., 'Write a unit test for my user controller...')"
+                     Height="45"
+                     VerticalContentAlignment="Center"
+                     KeyDown="OnInputKeyDown"/>
+            
+            <Button Grid.Column="1" 
+                    Content="Send Query" 
+                    Click="OnSendClick" 
+                    Width="110" Height="45"
+                    Margin="10,0,0,0"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>

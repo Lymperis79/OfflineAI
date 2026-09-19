@@ -1,0 +1,7 @@
+C:\Users\ThinkPad\Desktop\AvaloniaAgent\AvaloniaAgent\obj\Debug\net8.0\AvaloniaAgent.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\Desktop\AvaloniaAgent\AvaloniaAgent\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
+C:\Users\ThinkPad\Desktop\AvaloniaAgent\AvaloniaAgent\obj\Debug\net8.0\Avalonia\resources
+C:\Users\ThinkPad\Desktop\AvaloniaAgent\AvaloniaAgent\obj\Debug\net8.0\AvaloniaAgent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\Desktop\AvaloniaAgent\AvaloniaAgent\obj\Debug\net8.0\AvaloniaAgent.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\Desktop\AvaloniaAgent\AvaloniaAgent\obj\Debug\net8.0\AvaloniaAgent.AssemblyInfo.cs
+C:\Users\ThinkPad\Desktop\AvaloniaAgent\AvaloniaAgent\obj\Debug\net8.0\AvaloniaAgent.csproj.CoreCompileInputs.cache
